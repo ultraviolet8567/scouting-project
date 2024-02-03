@@ -6,8 +6,8 @@
     <body>
         <h1>Competitions</h1>
         <ul id="navigation">
-            {% for item in navigation %}
-                <li><a href="{{ item.href }}">{{ item.caption }}</a></li>
+            {% for item in competitions %}
+                <li><a href="{{ item.href }}">{{ item.caption }}</a> <p>{{ item.date }}</p></li>
             {% endfor %}
         </ul>
     </body>

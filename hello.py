@@ -10,9 +10,9 @@ def hello_world():
 
 @app.route("/landing")
 def landing():
-    return render_template("landing.html")
+    return render_template("landing.html", competitions=page_data.competitions)
 
 @app.route("/competitions/<string:competition>")
 def competition_page():
-    return render_template("competition.html", page_data.competitions(competition))
+    return render_template("competition.html")
 
