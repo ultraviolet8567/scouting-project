@@ -14,7 +14,8 @@ class comp_data:
         competitions[f'{id}'] = self
 
 exampleComp = comp_data("Ultraviolet 8567", "Some less cool team XYZA", "11/18/27", 22)
-print(competitions)
+exampleComp2 = comp_data("Ultraviolet 8567", "Some other team ABCD", "11/11/11", 23)
+print(competitions['22'].date, competitions['22'].caption)
     
 
     

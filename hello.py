@@ -13,6 +13,6 @@ def landing():
     return render_template("landing.html", competitions=page_data.competitions)
 
 @app.route("/competitions/<string:competition>")
-def competition_page():
-    return render_template("competition.html")
+def competition_page(competition):
+    return render_template("competition.html", compID=competition)
 
