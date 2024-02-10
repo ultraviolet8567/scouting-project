@@ -9,16 +9,13 @@
                 <tr>
                     <td><h2>COMPETITION NAME   </h2></td>
                     <td><h2>DATE   </h2></td>
-                    <td><h2>CHECK COLUMN   </h2></td>
                 </tr>
             {% for item in competitions %}
                 <tr>
                     <td><a href={{ competitions[item].href }}>{{ competitions[item].caption }}</a></td>
                     <td><p>{{ competitions[item].date }}</p></td>
-                    <td><p>THIS ROW RENDERED</p></td>
                 </tr>
             {% endfor %}
         </table>
-        <p>{{competitions['22'].caption}}</p>
     </body>
 </html>
